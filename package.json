@@ -11,7 +11,7 @@
     "postcss-scss": "1.0.2"
   },
   "scripts": {
-    "start": "npm run compile:scss && http-server dist",
-    "compile:scss": "postcss --use postcss-nested --parser postcss-scss ./text-overflow.scss -o dist/text-overflow.css"
+    "start": "npm run compile:scss && http-server docs",
+    "compile:scss": "postcss --use postcss-nested --parser postcss-scss ./text-overflow.scss -o docs/text-overflow.css"
   }
 }
