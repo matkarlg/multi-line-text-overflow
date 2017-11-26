@@ -1,0 +1,17 @@
+{
+  "name": "multiline-text-overflow",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Mathias Karlgren",
+  "license": "BSD3",
+  "devDependencies": {
+    "http-server": "0.10.0",
+    "postcss-cli": "4.1.1",
+    "postcss-nested": "2.1.2",
+    "postcss-scss": "1.0.2"
+  },
+  "scripts": {
+    "start": "npm run compile:scss && http-server dist",
+    "compile:scss": "postcss --use postcss-nested --parser postcss-scss ./text-overflow.scss -o dist/text-overflow.css"
+  }
+}
