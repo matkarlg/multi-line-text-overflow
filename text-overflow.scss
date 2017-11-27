@@ -7,12 +7,9 @@
 // Custom "text-overflow: ellipsis" for any number of rows
 .multiline-text-overflow {
   border: 1px solid black;
-  display: block;
   overflow: hidden;
   position: relative;
   max-height: calc(var(--line-height) * var(--rows));
-  word-wrap: break-word;
-  -ms-word-break: break-all;
 
   // Ellipsis element
   &:after {
@@ -27,7 +24,7 @@
   & span:after {
     content: '\0000a0';
     position: absolute;
-    width: 1000px;
+    width: 100%;
     z-index: 1;
     background-color: #fff;
   }
